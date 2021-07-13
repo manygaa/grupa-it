@@ -13,6 +13,7 @@ import {
 	FormControl 
 } from 'react-bootstrap';
 import RandomNumbers from './components/RandomNumbers/RandomNumbers';
+import Library from './components/Library/Library';
 
 const App = () => {
 	return (
@@ -24,7 +25,7 @@ const App = () => {
 					<Nav className="mr-auto">
 						<NavDropdown title="Tasks" id="basic-nav-dropdown">
 							<NavDropdown.Item href="randomNumbers">Task 1 - Random numbers</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.1">Task 1</NavDropdown.Item>
+							<NavDropdown.Item href="library">Task 2 - Library</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<Form inline>
@@ -38,8 +39,8 @@ const App = () => {
 					<Route path="/randomNumbers">
 						<RandomNumbers />
 					</Route>
-					<Route path="/users">
-
+					<Route path="/library">
+						<Library />
 					</Route>
 					<Route path="/">
 
